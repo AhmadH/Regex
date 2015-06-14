@@ -1,28 +1,9 @@
 
 # Regex.swift
 
-[![Build Status](https://travis-ci.org/brynbellomy/Regex.svg?branch=0.2.1)](https://travis-ci.org/brynbellomy/Regex)
-[![CocoaPods](https://img.shields.io/cocoapods/v/Regex.svg?style=flat)](http://cocoadocs.org/docsets/Regex)
-[![CocoaPods](https://img.shields.io/cocoapods/p/Regex.svg?style=flat)](http://cocoadocs.org/docsets/Regex)
-[![CocoaPods](https://img.shields.io/cocoapods/l/Regex.svg?style=flat)](http://cocoadocs.org/docsets/Regex)
-[![GitHub tag](https://img.shields.io/github/tag/brynbellomy/Regex.svg?style=flat)]()
+# Important
 
-# install
-
-Use [CocoaPods](https://cocoapods.org/).
-
-Add to your `Podfile`:
-
-```ruby
-pod 'Regex'
-```
-
-And then run `pod install` from the shell:
-
-```sh
-$ pod install
-```
-
+This is a fork to Swift 2, currently using Xcode 7 beta 1.
 
 # usage
 
@@ -82,7 +63,7 @@ for capture in ("Winnie the Pooh" =~ Regex("\\s+(the)\\s+")).captures {
 A more "functional programming" way of doing string replacement is possible via an override for `map()`.  In keeping with the overall aim to avoid reinventing a perfectly good wheel (i.e., `NSRegularExpression`), this function simply calls through to `NSRegularExpression.replaceMatchesInString()`.
 
 ```swift
-func map (regexResult:Regex.MatchResult, replacementTemplate:String) -> String
+func map (regexResult:Regex.MatchResult, _ replacementTemplate:String) -> String
 ```
 
 You can use it like so:
@@ -101,8 +82,7 @@ Or if you have some functional operators lying around (for example: <https://git
 ... but you have to be as crazy as me to find that more readable than `"Winnie".replaceRegex(_:withString:)`, so no pressure.
 
 
-
-
 # contributors / authors
 
 - bryn austin bellomy (<bryn.bellomy@gmail.com>)
+- Ahmad Alhashemi ([http://hashemi.md/])
