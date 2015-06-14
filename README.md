@@ -85,4 +85,4 @@ Or if you have some functional operators lying around (for example: <https://git
 # contributors / authors
 
 - bryn austin bellomy (<bryn.bellomy@gmail.com>)
-- Ahmad Alhashemi ([http://hashemi.md/])
+- Ahmad Alhashemi (http://hashemi.md/)
